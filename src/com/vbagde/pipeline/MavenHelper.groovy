@@ -3,7 +3,7 @@ package com.vbagde.pipeline
 class MavenHelper {
   def steps
   MavenHelper(steps) {
-    this.steps = step
+    this.steps = steps
   }
   def setup() {
     steps.echo "Running environment Maven"
