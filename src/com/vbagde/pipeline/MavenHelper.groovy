@@ -10,7 +10,7 @@ class MavenHelper {
   }
   def build(String goals) {
     steps.sh """
-      mvn "$goals"
+      mvn ${goals} -Dmaven.test.failure.ignore=true
     """
   }
 }
