@@ -9,7 +9,7 @@ class MavenHelper {
     steps.echo "Running environment Maven"
   }
   def build(String goal) {
-    step.sh """
+    steps.sh """
       mvn "$goal"
     """
   }
