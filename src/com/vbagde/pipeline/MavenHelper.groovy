@@ -1,6 +1,6 @@
 package com.vbagde.pipeline
 
-class MavenHelper
+class MavenHelper {
   def steps
   MavenHelper(steps) {
     this.steps = step
@@ -13,3 +13,4 @@ class MavenHelper
       mvn "$goal"
     """
   }
+}
